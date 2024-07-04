@@ -21,13 +21,13 @@ header{
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #cacaca;
-    span{
-        color: black;
-    }
-    h1{
-        color: rgb(236, 66, 66);
-        width: 250px;
-    }
+}
+header h1{
+    color: rgb(236, 66, 66);
+    width: 250px;
+}
+header span{
+    color: black;
 }
 #submenu{
     display: none;
@@ -70,12 +70,12 @@ header i:hover ~ #submenu{
     max-width: 600px;
     font-size: clamp(30px,5vw,50px);
     text-align: center;
-    span{
-        display: inline-block;
-        background-color: #F9D364;
-        padding:0 10px;
-        border-radius: 8px;
-    }
+}
+#hero h1 span{
+    display: inline-block;
+    background-color: #F9D364;
+    padding:0 10px;
+    border-radius: 8px;
 }
 #herosub{
     margin-top: 10px;
@@ -158,16 +158,16 @@ header i:hover ~ #submenu{
     justify-content: center;
     align-items: center;
     transition: all .5s;
-    P{
-        margin-top: 10px;
-        text-align: center;
-    }
+}
+.list a p{
+    margin-top: 10px;
+    text-align: center;
+}
+.list a:hover p{
+    text-decoration: underline;
 }
 .list a:hover{
     scale: 1.07;
-    p{
-        text-decoration: underline;
-    }
 }
 .list img{
     width: 150px;
@@ -183,13 +183,13 @@ footer{
     background-color: #121212;
     height: 80px;
     padding: 10px;
-    p{
-        font-family: poppins;
-        color: rgba(255, 255, 255, 0.3);;
-        text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-    }
+}
+footer p{
+    font-family: poppins;
+    color: rgba(255, 255, 255, 0.3);;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
 }
 @media (max-width: 768px) {
     #navlink{
@@ -217,7 +217,12 @@ footer{
         padding: 10px 0px;
         width: 130px;
     }
-    
+    #icon{
+        font-size: 14px;
+    }
+    #itext{
+        font-size: 14px;
+    }
     #books h1{
         font-size: 30px;
     }
