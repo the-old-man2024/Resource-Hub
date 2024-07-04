@@ -56,6 +56,12 @@ header i:hover ~ #submenu{
     width: 250px;
     justify-content: space-between;
 }
+#navlink a p{
+    transition: all .5s;
+}
+#navlink a p:hover{
+    color: rgb(235, 39, 39);
+}
 #hero{
     display: flex;
     flex-direction: column;
@@ -78,6 +84,7 @@ header i:hover ~ #submenu{
     border-radius: 8px;
 }
 #herosub{
+    font-weight: 500;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 80%;
