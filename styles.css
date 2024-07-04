@@ -97,9 +97,39 @@ header i:hover ~ #submenu{
 .rqbook:hover{
     background-color: rgb(235, 39, 39);
 }
+#info-sec{
+    margin-left: 30px;
+    background-color: #D1ECF1;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #03687a;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+#icon{
+    color: #062C33;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+#icon i{
+    margin-right: 5px;
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+}
+#itext{
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.7em;
+}
 #books{
     padding: 30px;
+    padding-top: 0px;
     margin-bottom: 50px;
+}
+#lsat{
+    margin-top: 0px;
 }
 #books h1{
     font-size: 50px;
