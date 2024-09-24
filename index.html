@@ -264,6 +264,32 @@
                 </div>
             </div>
         </div>
+        <script>
+            // Select all <a> tags inside the <div id="book">
+            let links = document.querySelectorAll('#books a');
+        
+            // Loop through each <a> tag and append the button inside it
+            links.forEach(link => {
+                // Create a button element
+                let button = document.createElement('button');
+                button.className = 'download'; // Add the 'download' class
+        
+                // Create an <i> element for the icon
+                let icon = document.createElement('i');
+                icon.className = 'fa fa-download'; // Add the FontAwesome download icon class
+        
+                // Add text to the button after the icon
+                let text = document.createTextNode('\u00A0\u00A0DOWNLOAD'); // Adding 2 non-breaking spaces and the text "DOWNLOAD"
+        
+                // Append the icon and text to the button
+                button.appendChild(icon);
+                button.appendChild(text);
+        
+                // Append the button to the <a> tag
+                link.appendChild(button);
+            });
+        </script>
+        
         <footer>
             <p>Copyright © 2024 All rights reserved | This website is Baked by <span style="color:#a3de83">The Old Man</span></p>
         </footer>
