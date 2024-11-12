@@ -1,309 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQTG1V04KP"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<html lang="en" data-theme="light">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YQTG1V04KP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'G-YQTG1V04KP');
-        </script>
-        <meta charset="utf-8">
-        <link 
-      rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <meta property="og:title" content="Free SAT, IELTS and Abroad Study Materials">
-        <meta property="og:image" content="https://r-hub.vercel.app/meta.png">
-        <meta property="og:description" content="A dedicated platform providing free PDFs for SAT, IELTS, and other crucial exams. Designed for students who can't afford hard copies or prefer digital versions, ensuring quality educational resources are accessible to everyone.">
-        <link rel="icon" type="image/x-icon" href="RH.svg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
-        <title>Resource Hub</title>
-    </head>
-    <body>
-        <header>
-            <h1>Resource <span>Hub</span></h1>
-            <div id="navlink">
-                <a href="#lsat">
-                    <p>SAT</p>
-                </a><a href="#lielts">
-                    <p>IELTS</p>
-                </a><a href="#lothers">
-                    <p>Others</p>
-                </a>
-            </div>
-            <a class="btn" id="headbtn" href="mailto:resourcehub2024@gmail.com"><p class="rqbook">Request a Book</p></a>
-            <i class="fa-solid fa-bars"></i>
-            <div id="submenu">
-                <div>
-                    <a href="#lsat">
-                        <p>SAT</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#lielts">
-                        <p>IELTS</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#lothers">
-                        <p>Others</p>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <div id="hero">
-            <h1>Free PDFs for SAT, IELTS, and <span>Study Abroad</span> Preparation!</h1>
-            <p id="herosub">A dedicated platform providing free PDFs for SAT, IELTS, and other crucial exams. Designed for students who can't afford hard copies or prefer digital versions, ensuring quality educational resources are accessible to everyone.</p>
-            <a class="btn" href="mailto:resourcehub2024@gmail.com"><p class="rqbook">Request a Book</p></a>
+      gtag("config", "G-YQTG1V04KP");
+    </script>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      property="og:title"
+      content="Free SAT, IELTS and Abroad Study Materials"
+    />
+    <meta property="og:image" content="https://r-hub.vercel.app/meta.png" />
+    <meta
+      property="og:description"
+      content="A dedicated platform providing free PDFs for SAT, IELTS, and other crucial exams. Designed for students who can't afford hard copies or prefer digital versions, ensuring quality educational resources are accessible to everyone."
+    />
+    <link rel="icon" type="image/x-icon" href="RH.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <title>Resource Hub</title>
+
+    <!-- DaisyUI & Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-green": "rgb(180, 244, 97)",
+              "primary-red": "rgb(236, 66, 66)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Notice Bar -->
+    <header class="sticky top-0 bg-primary-green flex justify-center">
+      <div class="text-center">
+        <h2 class="text-center">Hi! This is a store notice.</h2>
+      </div>
+    </header>
+
+    <!-- Header Primary -->
+    <header>
+      <h1>Resource <span>Hub</span></h1>
+      <div id="navlink">
+        <a href="#lsat"> <p>SAT</p> </a><a href="#lielts"> <p>IELTS</p> </a
+        ><a href="#lothers">
+          <p>Others</p>
+        </a>
+      </div>
+      <a class="btn" id="headbtn" href="mailto:resourcehub2024@gmail.com"
+        ><p class="rqbook">Request a Book</p></a
+      >
+      <i class="fa-solid fa-bars"></i>
+      <div id="submenu">
+        <div>
+          <a href="#lsat">
+            <p>SAT</p>
+          </a>
         </div>
-        <div id="info-sec">
-            <p id="icon"><i class="fa-solid fa-circle-info"></i>INFO</p>
-            <p id="itext">Click on your desired Book to <strong>Download</strong> the PDF<br>We don't provide any kind of <strong>Hard Copy</strong> of any Book<br>Use the <strong>Request book</strong> button to request for a pdf to add in the website</p>
+        <div>
+          <a href="#lielts">
+            <p>IELTS</p>
+          </a>
         </div>
-        <div id="books">
-            <h1 id="lsat">SAT</h1>
-            <div id="sat" class="list">
-                <div>
-                    <a href="https://drive.google.com/file/d/1qVUe_521XUgl-aOaDA7D5mcU6umRCPmi/view?usp=sharing">
-                        <img src="SAT/grammar.webp" alt="grammar 6th Edition">
-                        <p>The Ultimate Guide to SAT® Grammar Sixth Edition, By Erica L. Meltzer</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1qaIukOG_aDe4BrF7HVVN_S12CudZes22/view?usp=sharing">
-                        <img src="SAT/reading.webp" alt="reading 5th Edition">
-                        <p>The Complete Guide to SAT® Reading Fifth Edition, By Erica L. Meltzer</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1qlxikZbCCsRsRE93rFqWidd6gyqx0s21/view?usp=sharing">
-                        <img src="SAT/math.jpg" alt="college panda math">
-                        <p>The College Panda SAT Math: Advanced Guide and Workbook for the New SAT</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1JCH5L3ECbkJB007GWkoR10aREpL6dMIW/view?usp=sharing">
-                        <img src="SAT/princetonDsat.jpg" alt="princeton Dsat 2025">
-                        <p>Princeton Review Digital SAT Premium Prep, 2025</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/drive/folders/1LTjLQVeCOYamnzZ-cSbx8qup_Uc_M8vv?usp=drive_link">
-                        <img src="SAT/Collection.png" alt="Ultimate SAT resources Collection">
-                        <p>Introducing the Ultimate Digital SAT Resource Collection Google Drive!</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://docs.google.com/document/d/13y4VHuHW3lGonuAbTWwH56IH6tZnTaPGA5HQSNEz-5E/edit?usp=sharing">
-                        <img src="SAT/practice math.jpg" alt="Digital SAT math practice">
-                        <p>Digital SAT Math Practice (Full Book Part 1)</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/drive/folders/1A-KxBSPmYcuHVDCt173dsCmFTu6M1GM9?usp=sharing">
-                        <img src="SAT/study guide.jpg" alt="study guide">
-                        <p>The official Digital SAT study guide</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1RlGDate_nz5LvDh_SMb3v1WZqTj-IWIu/view?usp=sharing">
-                        <img src="SAT/dr. john.jpg" alt="dr. jogn sat">
-                        <p>Dr. John Chung's SAT Math Fifth Edition</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1QYdM3xkE0WrqOaZembRdRHDz0sUBghzs/view?usp=sharing">
-                        <img src="SAT/1600io digital sat math orange book.jpg" alt="1600io math dsat">
-                        <p>1600.io Digital SAT Math Orange Book Volume I & II</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1eS9PRDW4w8mpJwkZ_TUcOM6vdu7HKie4/view?usp=sharing">
-                        <img src="SAT/sat vocab erica 1st.jpg" alt="sat vocab erica 1st ed">
-                        <p>SAT Vocabulary: A New Approach, 1st Edition by Erica</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1SuP9SHiNgjH-hMVX5GhYL5G00HjMEYnx/view?usp=sharing">
-                        <img src="SAT/barron's digital sat study guide 2024.png" alt="barron's digital sat study guide 2024">
-                        <p>Digital SAT Study Guide Premium 2024</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1sJt4PGVz_38baKrZTsPFAGEHqI8xK6nd/view?usp=drive_link">
-                        <img src="SAT/robert's_vocab.jpg" alt="robert's vocab">
-                        <p>robert's extremely nerdy guide to digital sat vocabulary</p>
-                    </a>
-                </div>
-            </div>
-            <h1 id="lielts">IELTS</h1>
-            <div id="ielts" class="list">
-                <div>
-                    <a href="https://drive.google.com/file/d/1Y5HNfHunQ3yR2kE4JFUhzmiHd49o1gkd/view?usp=sharing">
-                        <img src="IELTS/19.png" alt="">
-                        <p>Cambridge ielts - 19</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://admissionwar7.files.wordpress.com/2023/09/ielts-18-academic-admissionwar.com_.pdf">
-                        <img src="IELTS/18.png" alt="">
-                        <p>Cambridge ielts - 18</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://admissionwar7.files.wordpress.com/2023/09/cambridge-ielts-17-academic-cambridge.pdf">
-                        <img src="IELTS/17.webp" alt="">
-                        <p>Cambridge ielts - 17</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-16-academic-admissionwar.pdf">
-                        <img src="IELTS/16.webp" alt="">
-                        <p>Cambridge ielts - 16</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-15-academic-admissionwar.pdf">
-                        <img src="IELTS/15.jpg" alt="">
-                        <p>Cambridge ielts - 15</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-14-academic-admissionwar.pdf">
-                        <img src="IELTS/14.jpg" alt="">
-                        <p>Cambridge ielts - 14</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-13-academic-admissionwar.pdf">
-                        <img src="IELTS/13.jpg" alt="">
-                        <p>Cambridge ielts - 13</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-12-academic-admissionwar.pdf">
-                        <img src="IELTS/12.jpg" alt="">
-                        <p>Cambridge ielts - 12</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-11-general-admissionwar.pdf">
-                        <img src="IELTS/11.jpg" alt="">
-                        <p>Cambridge ielts - 11</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-10-admissionwar.pdf">
-                        <img src="IELTS/10.jpg" alt="">
-                        <p>Cambridge ielts - 10</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-9-admissionwar.pdf">
-                        <img src="IELTS/9.jpg" alt="">
-                        <p>Cambridge ielts - 9</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-8-admissionwar.pdf">
-                        <img src="IELTS/8.jpg" alt="">
-                        <p>Cambridge ielts - 8</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/drive/folders/1O_s-qa--9T2KyQPScsIWLNjjEIId-gz3?usp=sharing">
-                        <img src="IELTS/Word-smart-1-2.jpg" alt="">
-                        <p>Word Smart I & II</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1j7A3QFMW7qjHkX1mj3JmGgHNVedVdPS-/view?usp=sharing">
-                        <img src="IELTS/cliff.jpg" alt="">
-                        <p>Cliffs TOEFL</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1Hl0X10-i34dfXBjsqMKRMQh8P1Q8oX8i/view?usp=sharing">
-                        <img src="IELTS/ielts-trainer.jpeg" alt="">
-                        <p>IELTS Trainer Book with Six Practice Tests</p>
-                    </a>
-                </div>
-            </div>
-            <h1 id="lothers">Others</h1>
-            <div id="others" class="list">
-                <div>
-                    <a href="https://drive.google.com/file/d/1xqwdsZDSvjkVuTUZus1T6WqC3XkIpKq8/view?usp=sharing">
-                        <img src="Others/CAG.PNG" alt="">
-                        <p>A Comprehensive Guide to College Admissions</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1aEfsNSgxqu8ZyJ5KpysUDZ7ahTXpzxpD/view?usp=sharing">
-                        <img src="Others/essayivy.jpg" alt="">
-                        <p>50 Successful IVY League Application Essays</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1NFhVTWH75C1agCQM1L73TczZ8f-kHuJ3/view?usp=sharing">
-                        <img src="Others/f1 visa.png" alt="">
-                        <p>F1 visa interview questions</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://docs.google.com/spreadsheets/d/1-G84seWQFLBzlgnz15EGzhREfuO8-pP_yQRzFQW-qVo/edit?usp=sharing">
-                        <img src="Others/usa resource.png" alt="">
-                        <p>USA Resources ft Al Ziad Sami</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1VP7zwAQR3CInvreXsaMgou2W_zVrNKxy/view?usp=sharing">
-                        <img src="Others/gmat.jpeg" alt="">
-                        <p>The official guide for gmat review 13th edition</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://drive.google.com/file/d/1FUbw7kO0OmaU1oGFu0uX_LtQnpGtRARx/view?usp=drive_link">
-                        <img src="Others/fiske.jpg" alt="fiske college guide">
-                        <p>Fiske Guide to Colleges 2023</p>
-                    </a>
-                </div>
-            </div>
+        <div>
+          <a href="#lothers">
+            <p>Others</p>
+          </a>
         </div>
-        <script>
-            // Select all <a> tags inside the <div id="book">
-            let links = document.querySelectorAll('#books a');
-        
-            // Loop through each <a> tag and append the button inside it
-            links.forEach(link => {
-                // Create a button element
-                let button = document.createElement('button');
-                button.className = 'download'; // Add the 'download' class
-        
-                // Create an <i> element for the icon
-                let icon = document.createElement('i');
-                icon.className = 'fa fa-download'; // Add the FontAwesome download icon class
-        
-                // Add text to the button after the icon
-                let text = document.createTextNode('\u00A0\u00A0DOWNLOAD'); // Adding 2 non-breaking spaces and the text "DOWNLOAD"
-        
-                // Append the icon and text to the button
-                button.appendChild(icon);
-                button.appendChild(text);
-        
-                // Append the button to the <a> tag
-                link.appendChild(button);
-            });
-        </script>
-        
-        <footer>
-            <p>Copyright © 2024 All rights reserved | This website is Baked by <span style="color:#a3de83">The Old Man</span></p>
-        </footer>
-    </body>
+      </div>
+    </header>
+
+    <div id="hero">
+      <h1>
+        Free PDFs for SAT, IELTS, and <span>Study Abroad</span> Preparation!
+      </h1>
+      <p id="herosub">
+        A dedicated platform providing free PDFs for SAT, IELTS, and other
+        crucial exams. Designed for students who can't afford hard copies or
+        prefer digital versions, ensuring quality educational resources are
+        accessible to everyone.
+      </p>
+      <a class="btn" href="mailto:resourcehub2024@gmail.com"
+        ><p class="rqbook">Request a Book</p></a
+      >
+    </div>
+    <div id="info-sec">
+      <p id="icon"><i class="fa-solid fa-circle-info"></i>INFO</p>
+      <p id="itext">
+        Click on your desired Book to <strong>Download</strong> the PDF<br />We
+        don't provide any kind of <strong>Hard Copy</strong> of any Book<br />Use
+        the <strong>Request book</strong> button to request for a pdf to add in
+        the website
+      </p>
+    </div>
+    <div id="books">
+      <h1 id="lsat">SAT</h1>
+      <div id="sat" class="list">
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1qVUe_521XUgl-aOaDA7D5mcU6umRCPmi/view?usp=sharing"
+          >
+            <img src="SAT/grammar.webp" alt="grammar 6th Edition" />
+            <p>
+              The Ultimate Guide to SAT® Grammar Sixth Edition, By Erica L.
+              Meltzer
+            </p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1qaIukOG_aDe4BrF7HVVN_S12CudZes22/view?usp=sharing"
+          >
+            <img src="SAT/reading.webp" alt="reading 5th Edition" />
+            <p>
+              The Complete Guide to SAT® Reading Fifth Edition, By Erica L.
+              Meltzer
+            </p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1qlxikZbCCsRsRE93rFqWidd6gyqx0s21/view?usp=sharing"
+          >
+            <img src="SAT/math.jpg" alt="college panda math" />
+            <p>
+              The College Panda SAT Math: Advanced Guide and Workbook for the
+              New SAT
+            </p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1JCH5L3ECbkJB007GWkoR10aREpL6dMIW/view?usp=sharing"
+          >
+            <img src="SAT/princetonDsat.jpg" alt="princeton Dsat 2025" />
+            <p>Princeton Review Digital SAT Premium Prep, 2025</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/drive/folders/1LTjLQVeCOYamnzZ-cSbx8qup_Uc_M8vv?usp=drive_link"
+          >
+            <img
+              src="SAT/Collection.png"
+              alt="Ultimate SAT resources Collection"
+            />
+            <p>
+              Introducing the Ultimate Digital SAT Resource Collection Google
+              Drive!
+            </p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://docs.google.com/document/d/13y4VHuHW3lGonuAbTWwH56IH6tZnTaPGA5HQSNEz-5E/edit?usp=sharing"
+          >
+            <img src="SAT/practice math.jpg" alt="Digital SAT math practice" />
+            <p>Digital SAT Math Practice (Full Book Part 1)</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/drive/folders/1A-KxBSPmYcuHVDCt173dsCmFTu6M1GM9?usp=sharing"
+          >
+            <img src="SAT/study guide.jpg" alt="study guide" />
+            <p>The official Digital SAT study guide</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1RlGDate_nz5LvDh_SMb3v1WZqTj-IWIu/view?usp=sharing"
+          >
+            <img src="SAT/dr. john.jpg" alt="dr. jogn sat" />
+            <p>Dr. John Chung's SAT Math Fifth Edition</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1QYdM3xkE0WrqOaZembRdRHDz0sUBghzs/view?usp=sharing"
+          >
+            <img
+              src="SAT/1600io digital sat math orange book.jpg"
+              alt="1600io math dsat"
+            />
+            <p>1600.io Digital SAT Math Orange Book Volume I & II</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1eS9PRDW4w8mpJwkZ_TUcOM6vdu7HKie4/view?usp=sharing"
+          >
+            <img
+              src="SAT/sat vocab erica 1st.jpg"
+              alt="sat vocab erica 1st ed"
+            />
+            <p>SAT Vocabulary: A New Approach, 1st Edition by Erica</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1SuP9SHiNgjH-hMVX5GhYL5G00HjMEYnx/view?usp=sharing"
+          >
+            <img
+              src="SAT/barron's digital sat study guide 2024.png"
+              alt="barron's digital sat study guide 2024"
+            />
+            <p>Digital SAT Study Guide Premium 2024</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1sJt4PGVz_38baKrZTsPFAGEHqI8xK6nd/view?usp=drive_link"
+          >
+            <img src="SAT/robert's_vocab.jpg" alt="robert's vocab" />
+            <p>robert's extremely nerdy guide to digital sat vocabulary</p>
+          </a>
+        </div>
+      </div>
+      <h1 id="lielts">IELTS</h1>
+      <div id="ielts" class="list">
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1Y5HNfHunQ3yR2kE4JFUhzmiHd49o1gkd/view?usp=sharing"
+          >
+            <img src="IELTS/19.png" alt="" />
+            <p>Cambridge ielts - 19</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://admissionwar7.files.wordpress.com/2023/09/ielts-18-academic-admissionwar.com_.pdf"
+          >
+            <img src="IELTS/18.png" alt="" />
+            <p>Cambridge ielts - 18</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://admissionwar7.files.wordpress.com/2023/09/cambridge-ielts-17-academic-cambridge.pdf"
+          >
+            <img src="IELTS/17.webp" alt="" />
+            <p>Cambridge ielts - 17</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-16-academic-admissionwar.pdf"
+          >
+            <img src="IELTS/16.webp" alt="" />
+            <p>Cambridge ielts - 16</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-15-academic-admissionwar.pdf"
+          >
+            <img src="IELTS/15.jpg" alt="" />
+            <p>Cambridge ielts - 15</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-14-academic-admissionwar.pdf"
+          >
+            <img src="IELTS/14.jpg" alt="" />
+            <p>Cambridge ielts - 14</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-13-academic-admissionwar.pdf"
+          >
+            <img src="IELTS/13.jpg" alt="" />
+            <p>Cambridge ielts - 13</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-12-academic-admissionwar.pdf"
+          >
+            <img src="IELTS/12.jpg" alt="" />
+            <p>Cambridge ielts - 12</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-11-general-admissionwar.pdf"
+          >
+            <img src="IELTS/11.jpg" alt="" />
+            <p>Cambridge ielts - 11</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-10-admissionwar.pdf"
+          >
+            <img src="IELTS/10.jpg" alt="" />
+            <p>Cambridge ielts - 10</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-9-admissionwar.pdf"
+          >
+            <img src="IELTS/9.jpg" alt="" />
+            <p>Cambridge ielts - 9</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://educationbdju.files.wordpress.com/2022/01/cambridge-ielts-8-admissionwar.pdf"
+          >
+            <img src="IELTS/8.jpg" alt="" />
+            <p>Cambridge ielts - 8</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/drive/folders/1O_s-qa--9T2KyQPScsIWLNjjEIId-gz3?usp=sharing"
+          >
+            <img src="IELTS/Word-smart-1-2.jpg" alt="" />
+            <p>Word Smart I & II</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1j7A3QFMW7qjHkX1mj3JmGgHNVedVdPS-/view?usp=sharing"
+          >
+            <img src="IELTS/cliff.jpg" alt="" />
+            <p>Cliffs TOEFL</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1Hl0X10-i34dfXBjsqMKRMQh8P1Q8oX8i/view?usp=sharing"
+          >
+            <img src="IELTS/ielts-trainer.jpeg" alt="" />
+            <p>IELTS Trainer Book with Six Practice Tests</p>
+          </a>
+        </div>
+      </div>
+      <h1 id="lothers">Others</h1>
+      <div id="others" class="list">
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1xqwdsZDSvjkVuTUZus1T6WqC3XkIpKq8/view?usp=sharing"
+          >
+            <img src="Others/CAG.PNG" alt="" />
+            <p>A Comprehensive Guide to College Admissions</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1aEfsNSgxqu8ZyJ5KpysUDZ7ahTXpzxpD/view?usp=sharing"
+          >
+            <img src="Others/essayivy.jpg" alt="" />
+            <p>50 Successful IVY League Application Essays</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1NFhVTWH75C1agCQM1L73TczZ8f-kHuJ3/view?usp=sharing"
+          >
+            <img src="Others/f1 visa.png" alt="" />
+            <p>F1 visa interview questions</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1-G84seWQFLBzlgnz15EGzhREfuO8-pP_yQRzFQW-qVo/edit?usp=sharing"
+          >
+            <img src="Others/usa resource.png" alt="" />
+            <p>USA Resources ft Al Ziad Sami</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1VP7zwAQR3CInvreXsaMgou2W_zVrNKxy/view?usp=sharing"
+          >
+            <img src="Others/gmat.jpeg" alt="" />
+            <p>The official guide for gmat review 13th edition</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1FUbw7kO0OmaU1oGFu0uX_LtQnpGtRARx/view?usp=drive_link"
+          >
+            <img src="Others/fiske.jpg" alt="fiske college guide" />
+            <p>Fiske Guide to Colleges 2023</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Select all <a> tags inside the <div id="book">
+      let links = document.querySelectorAll("#books a");
+
+      // Loop through each <a> tag and append the button inside it
+      links.forEach((link) => {
+        // Create a button element
+        let button = document.createElement("button");
+        button.className = "download"; // Add the 'download' class
+
+        // Create an <i> element for the icon
+        let icon = document.createElement("i");
+        icon.className = "fa fa-download"; // Add the FontAwesome download icon class
+
+        // Add text to the button after the icon
+        let text = document.createTextNode("\u00A0\u00A0DOWNLOAD"); // Adding 2 non-breaking spaces and the text "DOWNLOAD"
+
+        // Append the icon and text to the button
+        button.appendChild(icon);
+        button.appendChild(text);
+
+        // Append the button to the <a> tag
+        link.appendChild(button);
+      });
+    </script>
+
+    <footer>
+      <p>
+        Copyright © 2024 All rights reserved | This website is Baked by
+        <span style="color: #a3de83">The Old Man</span>
+      </p>
+    </footer>
+  </body>
 </html>
