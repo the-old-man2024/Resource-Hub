@@ -127,16 +127,29 @@ header i:hover ~ #submenu{
 }
 #info-sec{
     margin-left: 30px;
-    background-color: #D1ECF1;
+    background-color: #ccffeb;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #03687a;
+    border-left: 4px solid #00b36d;
     margin-right: 30px;
     margin-top: 50px;
     margin-bottom: -40px;
 }
+.donate-button {
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 40%, 100% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+}
+
 #icon{
-    color: #062C33;
+    color: #00331f;
     font-weight: 900;
     margin-bottom: 10px;
 }
