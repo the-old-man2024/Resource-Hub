@@ -1,2 +1,4 @@
 User-agent: facebookexternalhit
 Disallow: /
+
+Sitemap: https://r-hub.xyz/sitemap.xml
